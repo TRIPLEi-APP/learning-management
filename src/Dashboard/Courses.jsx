@@ -37,7 +37,7 @@ console.log(courses.length);
       </div>
 
       {/* Button group */}
-      <div className="flex items-center mb-10">
+      <div className="flex flex-col lg:flex-row mt-10 md:mt-0 space-y-3 md:space-y-0 items-center mb-10">
           <button className="px-4 py-2 bg-[#A9BF1C] text-white mr-4">Enrolled Course (24)</button>
           <button className="px-4 py-2 bg-[#F4F6F8] text-[#1D2026] hover:bg-[#A9BF1C] hover:text-white mr-4">Active Course (05)</button>
           <button className="px-4 py-2 bg-[#F4F6F8] text-[#1D2026] hover:bg-[#A9BF1C] hover:text-white mr-4">Completed Course (04)</button>
@@ -45,7 +45,7 @@ console.log(courses.length);
 
       {/* Courses Section */}
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 mx-5 lg:mx-0">
           {courses.slice(0, visibleCourses).map((course, index) => (
            <NavLink to={`/dashboard/courses/${course.id}`}  key={index}>
              <div key={course.id}
