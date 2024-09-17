@@ -49,7 +49,11 @@ const Navbar = () => {
                   </ul>
                 </details>
               </li>
-              <li><a>Support</a></li>
+              <li><a>
+                <Link to={'/support'}>
+              Support
+              </Link>
+              </a></li>
               <li><a onClick={toggleModal}>Login</a></li>
             </ul>
           </div>
@@ -73,7 +77,11 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-            <li><a>Support</a></li>
+            <li><a>
+                <Link to={'/support'}>
+              Support
+              </Link>
+              </a></li>
             <li><a onClick={toggleModal}>Login</a></li>
           </ul>
 
