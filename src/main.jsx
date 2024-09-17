@@ -18,6 +18,8 @@ import CourseDetails from './Dashboard/CourseDetails';
 import DashProfile from './Dashboard/DashProfile';
 import Errorpage from './Pages/Errorpage/Errorpage';
 import Support from './Pages/Support/Support';
+import GetReport from './Pages/GetReport/GetReport';
+import Mylevel from './Dashboard/Mylevel';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,10 @@ const router = createBrowserRouter([
         path: "support",
         element: <Support/>,
       },
+      {
+        path: "get-report",
+        element: <GetReport/>,
+      },
     ]
   },
   {
@@ -64,6 +70,10 @@ const router = createBrowserRouter([
         path: "/dashboard/courses/:courseId",
         element: <CourseDetails />,
       }, 
+      {
+        path: "/dashboard/my-level",
+        element: <Mylevel />,
+      },
       {
         path: "/dashboard/profile",
         element: <DashProfile/>,

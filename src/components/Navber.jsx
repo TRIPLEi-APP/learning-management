@@ -40,14 +40,9 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow mt-[60px]"
             >
               <li>
-                <details>
-                  <summary>Products</summary>
-                  <ul className="p-2">
-                    <li><a>Learning Management</a></li>
-                    <li><a>Sustainable Report</a></li>
-                    <li><a>Others</a></li>
-                  </ul>
-                </details>
+               <Link to={'/get-report'}>
+               Get Report
+               </Link>
               </li>
               <li><a>
                 <Link to={'/support'}>
@@ -67,16 +62,11 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-5">
           <ul className="menu menu-horizontal px-1 flex gap-5">
-            <li>
-              <details>
-                <summary>Products</summary>
-                <ul className="p-2 w-52">
-                <li><a>Learning Management</a></li>
-                    <li><a>Sustainable Report</a></li>
-                    <li><a>Others</a></li>
-                </ul>
-              </details>
-            </li>
+          <li>
+               <Link to={'/get-report'}>
+               Get Report
+               </Link>
+              </li>
             <li><a>
                 <Link to={'/support'}>
               Support

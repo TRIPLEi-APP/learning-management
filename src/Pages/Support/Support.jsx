@@ -29,9 +29,9 @@ const Support = () => {
         setOpenIndex(openIndex === index ? null : index);
     };
     return (
-        <div className="flex flex-col lg:flex-row pt-32 py-20 lg:mx-[200px]">
+        <div className="flex flex-col lg:flex-row pt-16 lg:pt-32 py-20 lg:mx-[200px]">
             {/* FAQ */}
-            <div className="w-[50%] h-full px-10 pb-10 pt-6 bg-[#F4F6F8] rounded-[8px]">
+            <div className="lg:w-[50%] h-full lg:px-10 pb-10 pt-6 bg-[#F4F6F8] rounded-[8px]">
             <div className='text-center lg:text-left'>
                 <h1 className="text-[32px] font-[700] leading-[48px]">
                     FAQ
@@ -76,12 +76,12 @@ const Support = () => {
             </div>
             </div>
             {/* From */}
-            <div className=" ml-20 space-y-6 w-[50%]">
+            <div className=" lg:ml-20 space-y-6 lg:w-[50%]">
                 <div className="">
-                <h2 className="text-[32px] font-[700] leading-[48px]">Feel free to contact us. <br />We’ll be glad to hear from you, buddy.</h2>
+                <h2 className="text-[28px] lg:text-[32px] font-[700] leading-[48px] lg:text-left text-center mt-10 lg:mt-0">Feel free to contact us. <br />We’ll be glad to hear from you, buddy.</h2>
                 </div>
 
-                <form className=" space-y-6 py-15">
+                <form className="mx-5 lg:mx-0 space-y-6 py-15">
                 <div>
                     <input
                     type="text"
